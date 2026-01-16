@@ -13,27 +13,27 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![BiliBili][Bilibili-shield]][Bilibili-url]
+[![BiliBili][bilibili-shield]][bilibili-url]
 
 <!-- PROJECT LOGO -->
 <br />
 
 <p align="center">
-  <a href="https://github.com/grant-Gan/desktop_smart_lamp/">
+  <a href="https://github.com/grant-Gan/ECM_XLR_microphone/">
     <img src="Images/Logo.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">AXin实验室</h3>
   <p align="center">
     生命不息，折腾不止，Axin致力于DIY想要又买不起的产品~
     <br />
-    <a href="https://github.com/grant-Gan/desktop_smart_lamp"><strong>探索本项目的文档 »</strong></a>
+    <a href="https://github.com/grant-Gan/ECM_XLR_microphone"><strong>探索本项目的文档 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/grant-Gan/desktop_smart_lamp">查看Demo</a>
+    <a href="https://github.com/grant-Gan/ECM_XLR_microphone">查看Demo</a>
     ·
-    <a href="https://github.com/grant-Gan/desktop_smart_lamp/issues">报告Bug</a>
+    <a href="https://github.com/grant-Gan/ECM_XLR_microphone/issues">报告Bug</a>
     ·
-    <a href="https://github.com/grant-Gan/desktop_smart_lamp/issues">提出新特性</a>
+    <a href="https://github.com/grant-Gan/ECM_XLR_microphone/issues">提出新特性</a>
   </p>
 
 </p>
@@ -41,22 +41,17 @@
  
 ## 目录
 
-- [Roadmap](#Roadmap)
-- [下载步骤](#下载步骤)
+- [Roadmap](#roadmap)
 - [文件目录说明](#文件目录说明)
-- [使用的框架](#使用的框架)
-- [依赖库](#依赖库)
-- [版本控制](#版本控制)
 - [零件选型](#零件选型)
-    1. [电源适配器](#电源适配器)
-    2. [数据线](#数据线)
-    3. [灯管](#灯管)
-    4. [角码](#角码)
-    5. [悬臂支架](#悬臂支架)
-    6. [其它](#其它)
-- [PCB焊接](#PCB焊接)
-    1. [无线控制版本](#无线控制版本)
-    2. [滑动控制版本](#滑动控制版本)
+    1. [音头](#音头)
+    2. [屏蔽网](#屏蔽网)
+    3. [运算放大器](#运算放大器)
+    4. [1G电阻](#1g电阻)
+    5. [卡侬接头](#卡侬接头)
+    6. [螺丝螺母](#螺丝螺母)
+    7. [其它](#其它)
+- [PCB焊接](#pcb焊接)
 - [作者](#作者)
 - [版权说明](#版权说明)
 
@@ -180,8 +175,6 @@ ECM_XLR_Microphone
 
 ### 作者
 
-AXin实验室
-
 Bilibili:@AXin实验室 小红书:@AXin实验室  闲鱼：@AXin实验室
 
 
@@ -198,24 +191,24 @@ Bilibili:@AXin实验室 小红书:@AXin实验室  闲鱼：@AXin实验室
 
 完整的许可条款请见：[LICENSE](LICENSE) 文件。
 
-该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/grant-Gan/desktop_smart_lamp/LICENSE.txt)
+该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/AXinsLab/ECM_XLR_microphone/LICENSE.txt)
 
 
 
 <!-- links -->
-[your-project-path]:grant-Gan/desktop_smart_lamp
-[contributors-shield]: https://img.shields.io/github/contributors/grant-Gan/desktop_smart_lamp.svg?style=flat-square
-[contributors-url]: https://github.com/grant-Gan/desktop_smart_lamp/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/grant-Gan/desktop_smart_lamp.svg?style=flat-square
-[forks-url]: https://github.com/grant-Gan/desktop_smart_lamp/network/members
-[stars-shield]: https://img.shields.io/github/stars/grant-Gan/desktop_smart_lamp.svg?style=flat-square
-[stars-url]: https://github.com/grant-Gan/desktop_smart_lamp/stargazers
-[issues-shield]: https://img.shields.io/github/issues/grant-Gan/desktop_smart_lamp.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/grant-Gan/desktop_smart_lamp.svg
-[license-shield]: https://img.shields.io/github/license/grant-Gan/desktop_smart_lamp.svg?style=flat-square
-[license-url]: https://github.com/grant-Gan/desktop_smart_lamp/blob/master/LICENSE.txt
-[Bilibili-shield]: https://img.shields.io/badge/bilibili-00A1D6?logo=bilibili&logoColor=white
-[Bilibili-url]: https://www.bilibili.com/video/BV1rygnzuE4w
+[your-project-path]:grant-Gan/ECM_XLR_microphone
+[contributors-shield]: https://img.shields.io/github/contributors/grant-Gan/ECM_XLR_microphone.svg?style=flat-square
+[contributors-url]: https://github.com/grant-Gan/ECM_XLR_microphone/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/grant-Gan/ECM_XLR_microphone.svg?style=flat-square
+[forks-url]: https://github.com/grant-Gan/ECM_XLR_microphone/network/members
+[stars-shield]: https://img.shields.io/github/stars/grant-Gan/ECM_XLR_microphone.svg?style=flat-square
+[stars-url]: https://github.com/grant-Gan/ECM_XLR_microphone/stargazers
+[issues-shield]: https://img.shields.io/github/issues/grant-Gan/ECM_XLR_microphone.svg?style=flat-square
+[issues-url]: https://github.com/grant-Gan/ECM_XLR_microphone/issues
+[license-shield]: https://img.shields.io/github/license/grant-Gan/ECM_XLR_microphone.svg?style=flat-square
+[license-url]: https://github.com/grant-Gan/ECM_XLR_microphone/blob/master/LICENSE.txt
+[bilibili-shield]: https://img.shields.io/badge/关注我-FB7299?logo=bilibili&logoColor=white
+[bilibili-url]: https://www.bilibili.com/video/BV1rygnzuE4w
 
 
 
