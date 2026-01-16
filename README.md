@@ -13,7 +13,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![BiliBili][linkedin-shield]][linkedin-url]
+[![BiliBili][Bilibili-shield]][Bilibili-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -41,7 +41,7 @@
  
 ## 目录
 
-- [重点提示](#重点提示)
+- [Roadmap](#Roadmap)
 - [下载步骤](#下载步骤)
 - [文件目录说明](#文件目录说明)
 - [使用的框架](#使用的框架)
@@ -60,129 +60,95 @@
 - [作者](#作者)
 - [版权说明](#版权说明)
 
-### 重点提示
+# Roadmap
 
-截至到目前，台灯的旋转控制器代码仍然有Bug，AXin正在利用业余时间修复中，只能保证基础功能的正常使用。建议大家优先复刻滑动控制版本。
+待增加功能：
+1. 增加75Hz低切开关
+2. 增加-10dB衰减开关，提升麦克风可录制的最大升压
+3. 增加7kHz以后3dB shelf调音电路
 
-待开发功能：
-1. 控制器Deep Sleep模式修复
-2. 控制器与驱动板自动配对
-3. 控制器低电提醒
-4. HomeAssistant接入
-
-### 下载步骤
-Clone the repo
-
-```sh
-git clone https://github.com/grant-Gan/desktop_smart_lamp.git
-```
 
 ### 文件目录说明
 
 ```
-desktop_smart_lamp 
-├── README.md
+ECM_XLR_Microphone
+├── .gitignore
 ├── LICENSE
-├── /3D_Model
-│  ├── /Lamp_case
-│  ├── /Rotary_Controller
-│  ├── /Slider_Controller
-├── /BOM
-│  ├── /BOM_Base_Board_2025-07-23.xlsx
-│  ├── /BOM_Driver Board _2025-07-23.xlsx
-│  ├── /BOM_Rotary_Controller_Board_2025-07-23.xlsx
-│  ├── /BOM_Slider_Controller_Board_2025-07-23.xlsx
-├── /images
-├── /Code
-│  ├── /Lamp_Driver
-│  ├── /Lamp_Driver
-├── /PCBA
-│  ├── /Gerber_Base_Board_20250723.zip
-│  ├── /Gerber_Driver_Board_20250723.zip
-│  ├── /Gerber_Rotary_Controller_Board_20250723.zip
-│  ├── /Gerber_Slider_Controller_Board_20250723.zip
-├── /Schematic
-│  ├── /Base_board.pdf
-│  ├── /Driver_board.pdf
-│  ├── /Rotary_Controller_Board.pdf
-│  ├── /Slider_Controller_board.pdf
-
+├── README.md
+├── /3D_Models
+│   ├── Full_Models_3D_Printer.stl
+│   ├── 上盖.stl
+│   ├── 下盖.stl
+│   ├── 咪头外壳.stl
+│   └── 咪头支架_30mm.stl
+├── /Images
+│   └── Logo.png
+├── /PCB
+│   ├── /Gerber
+│   │   └── Alice_OPA_Gerber.zip
+│   ├── /Kicad_project
+│   │   ├── Alice_OPA_ECM_Microphone.kicad_pcb
+│   │   ├── Alice_OPA_ECM_Microphone.kicad_pro
+│   │   ├── Alice_OPA_ECM_Microphone.kicad_sch
+│   │   └── Alice_OPA_ECM_Microphone.round-tracks-config
+│   ├── /PCB
+│   │   └── OPA_Alice_ECM_Microphone_PCB.pdf
+│   └── /Schematics
+│       └── OPA_Alice_ECM_Microphone.pdf
+└── /Reference Document
+    ├── /Apmlifier
+    │   └── TI-反向放大器电路.pdf
+    └── /Supply_Design
+        ├── CD4584.pdf
+        ├── Phantom Power with Operational Amplifiers.pdf
+        └── Voltage_multipliers_with_CMOS_gates.pdf
 ```
 
-### 使用的框架
-[esp-idf](https://github.com/espressif/esp-idf) 
-
-
-### 依赖库
-
-- [arduino-esp32](https://github.com/espressif/arduino-esp32)
-- [Button2](https://github.com/LennartHennigs/Button2)
-- [ai-esp32-rotary-encoder](https://github.com/igorantolic/ai-esp32-rotary-encoder)
-
-
-### 版本控制
-
-该项目使用Git进行版本管理。您可以在repository参看当前可用版本。
-
 ### 零件选型
-#### 电源适配器
-本项目设计最大功耗为30W，输入电压为12~20V，20V时效率比较高，驱动板发热下降，推荐首选。因此需要使用额定30W以上、支持20V输出、支持PD充电协议的电源适配器，大部分手机配的快充头，如果功率大于30W，有TYPE-C接口都可以使用，不必额外购买。
+#### 音头
+理论上，不带JFET的驻极体音头都可以使用，大家可以自由选择，如视频中所说，C端消费者可以买到的比较靠谱的应该就是得胜捷韵那家的驻极体音头，大家不想折腾的话可以跟我选同款就好。灵敏度建议标准的-34dB
 <p align="center">
-  <img src="Images/电源适配器.jpg" height="200">  
-  <p align="center">有Type-C输出的电源适配器，通常支持PD协议</p>
+  <img src="Images/JY-H25-20.jpg" height="200">  
+  <p align="center">得胜JY-H25-20</p>
 </p>
 
-#### 数据线
-本项目使用的时C2C快充数据线，建议额定功率60W以上，长度根据使用环境选择，AXin使用的是2米的数据线，能够匹配大部分使用场景。
+#### 屏蔽网
+理论上，不带JFET的驻极体音头都可以使用，大家可以自由选择，如视频中所说，C端消费者可以买到的比较靠谱的应该就是得胜捷韵那家的驻极体音头，大家不想折腾的话可以跟我选同款就好。灵敏度建议标准的-34dB
 <p align="center">
-  <img src="Images/快充数据线.webp" height="200">  
-  <p align="center">C2C快充数据线</p>
+  <img src="Images/JY-H25-20.jpg" height="200">  
+  <p align="center">得胜JY-H25-20</p>
 </p>
 
-#### 灯管
-本项目使用70cm长，横截面宽26mm，高11mm的铝合金灯管，购买地址见B站视频。商家默认出售的是1米长度，请留言需要裁剪。
 
-#### 角码
-本项目使用的是20*32*60的L型不锈钢角码，若想选用其他型号，需要保证螺丝孔开口大于6.0mm以上，能够让悬臂支架上1/4螺丝头伸进去。
+#### 运算放大器
+建议使用TI的OPA1642运放，这颗运放输入级为JFET，低噪声高阻抗，并且功耗比较低，声卡幻象电源可以推得动。
 <p align="center">
-  <img src="Images/角码.png" height="300">  
-  <p align="center">20x32x60角码</p>
+  <img src="Images/OPA1642.jpg" height="200">  
+  <p align="center">OPA1642</p>
 </p>
 
-#### 悬臂支架
-本项目使用的是带有1/4螺丝的悬臂支架配合铝制夹具，需要注意的是由于灯管比较长，力臂较大，一定要选择质量足够好的悬臂支架才行，不然固定扳手的螺母会滑丝，建议大家不要贪图便宜，在正规渠道购买。
+#### 1G电阻
+1G电阻我是在淘宝上买的玻璃釉高压电阻，注意阻值一定要选择1G以上的，小于这个值会导致声音没有低频。
 <p align="center">
-  <img src="Images/悬臂支架.png" height="300">  
-  <p align="center">带1/4螺丝的悬臂支架</p>
+  <img src="Images/1G电阻.jpg" height="200">  
+  <p align="center">1G 玻璃釉电阻</p>
 </p>
 
-#### 螺丝
-- 无线控制版   
+#### 卡侬接头
+使用的是科诺恩的三芯卡侬公插座，质量挺不错的，推荐大家使用
+<p align="center">
+  <img src="Images/卡侬插座.jpg" height="300">  
+  <p align="center">CM-XLR3M</p>
+</p>
+
+#### 螺丝螺母 
 
 | 位置      | 型号      | 类型   | 螺丝头类型 | 数量 |
 |---------|---------|------|-------|----|
-| 堵头与灯管连接 | M2.6*20 | 自攻螺丝 | 内六角   | 4  |
-| 堵头上下连接  | M2*12   | 普通螺丝 | 内六角   | 2  |
-| 堵头上下连接  | M2      | 螺母   | \     | 2  |
-| 控制器     | M2*12   | 自攻螺丝 | 内六角   | 5  |
-| 灯管与L角码连接 | M6*6    | 普通螺丝 | 内六角   | 2  |
-| 灯管与L角码连接 | M6*10*2 | 方形螺母 | \     | 2  |
-| L角码与支架连接 | 1/4-20牙 | 防滑螺母 | \     | 1  |
-| L角码与支架连接 | M6*10*2 | 垫片   | \     | 1  |
-
-- 滑动控制版
-
-| 位置       | 型号      | 类型   | 螺丝头类型 | 数量 |
-|----------|---------|------|-------|----|
-| 堵头与灯管连接  | M2.6*20 | 自攻螺丝 | 内六角   | 4  |
-| 堵头与控制器连接 | M2*25   | 普通螺丝 | 内六角   | 2  |
-| 堵头上下连接   | M2      | 螺母   | \     | 2  |
-| 控制器与灯管连接 | M2*18   | 自攻螺丝 | 内六角   | 2  |
-| 灯管与L角码连接 | M6*6    | 普通螺丝 | 内六角   | 2  |
-| 灯管与L角码连接 | M6*10*2 | 方形螺母 | \     | 2  |
-| L角码与支架连接 | 1/4-20牙 | 防滑螺母 | \     | 1  |
-| L角码与支架连接 | M6*10*2 | 垫片   | \     | 1  |
-
+| 上下壳固定 | M2.5*14 | 普通螺丝 | 内六角   | 8  |
+| 中空螺柱  | M6*40外径10   | 螺柱 | 内六角   | 1  |
+| 中空螺丝  | M6*20孔3.2      | 中空螺丝   | 六角    | 2  |
+| 屏蔽网固定| M3*18   | 铆接螺丝 | 十字   | 3(套)  |
 
 #### 其它
 其它零件暂时没有需要重点注意的，想起来或者等到后续问的朋友比较多再行补充~
@@ -212,29 +178,12 @@ desktop_smart_lamp
 </p>
 
 
-#### 滑动控制版本
-- 驱动板  
-滑动控制版本可以不焊接控制器、DCDC部分的元器件，成本低不少，若没有无线控制需求，推荐给大家优先尝试。具体需要焊接的元件请参考下方的焊接参考图和原理图。
-**注意事项：驱动端输出电压较高，需使用50V以上电容。**
-<p align="center">
-  <img src="Images/模拟调光版-焊接参考.png">  
-滑动控制版驱动板焊接参考 
-</p>  
-
-- 滑动控制板  
-这里没什么好说的，直接按照图焊接好就行。
-<p align="center">
-  <img src="Images/滑动控制板.png" width="300">  
-  <p align="center">滑动控制板</p>
-</p>  
-
-
-
 ### 作者
 
 AXin实验室
 
-Bilibili:@AXin实验室 小红书:@AXin实验室   
+Bilibili:@AXin实验室 小红书:@AXin实验室  闲鱼：@AXin实验室
+
 
 ### 版权说明
 本项目采用 **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License** 授权。
@@ -265,8 +214,8 @@ Bilibili:@AXin实验室 小红书:@AXin实验室
 [issues-url]: https://img.shields.io/github/issues/grant-Gan/desktop_smart_lamp.svg
 [license-shield]: https://img.shields.io/github/license/grant-Gan/desktop_smart_lamp.svg?style=flat-square
 [license-url]: https://github.com/grant-Gan/desktop_smart_lamp/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.bilibili.com/video/BV1rygnzuE4w
+[Bilibili-shield]: https://img.shields.io/badge/bilibili-00A1D6?logo=bilibili&logoColor=white
+[Bilibili-url]: https://www.bilibili.com/video/BV1rygnzuE4w
 
 
 
