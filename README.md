@@ -150,28 +150,7 @@ ECM_XLR_Microphone
 
 ### PCB焊接
 
-#### 无线控制版本
-- 驱动板  
-无线控制驱动板使用ESP32-C2模组，使用PWM调光，驱动芯片为LGS63042EP,中间部分仅需要焊接R9、R18两个下拉电阻及D5、D6两个稳压二极管，其中稳压二极管用于保护驱动芯片EN引脚，可选。  
-**注意事项：驱动端输出电压较高，需使用50V以上电容。**
-<p align="center">
-  <img src="Images/PWM调光版-焊接参考.png">  
-无线控制版驱动板焊接参考 
-</p>
-  
-- 控制板   
-**注意事项：控制器焊接需要留意编码器的选型，本项目采用的编码器型号为EC11、手柄长度12mm、梅花柄、正码（顺时针）、旋转一圈脉冲20位**
-
-<p align="center">
-  <img src="Images/控制板TOP.png" width="300" hwight="300">
-  <p align="center">控制器焊接参考</p>
-</p>
-
-<p align="center">
-  <img src="Images/控制板Buttom.png" width="300" hwight="300">
-  <p align="center">控制器焊接参考</p>
-</p>
-
+等我更新，还没空搞
 
 ### 作者
 
