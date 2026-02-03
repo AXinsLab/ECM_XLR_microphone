@@ -136,6 +136,10 @@ ECM_XLR_Microphone
   <p align="center">CM-XLR3M</p>
 </p>
 
+#### BOM  
+
+详见BOM文件夹中的bom.html文件，下载打开后可以直接浏览器预览  
+
 #### 螺丝螺母 
 
 | 位置      | 型号      | 类型   | 螺丝头类型 | 数量 |

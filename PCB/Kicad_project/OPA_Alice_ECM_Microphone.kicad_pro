@@ -58,80 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_overlap|120000000|124200000|05db545f-d32d-42a8-9330-c30226073779|6e11c86d-a0b9-4c3b-a351-75f0d0732899",
-          ""
-        ],
-        [
-          "silk_overlap|120100000|53700000|70890d2f-267d-4726-9c7e-234e71453074|de2a8f48-cd54-4618-8ed4-471309f78fd1",
-          ""
-        ],
-        [
-          "silk_overlap|120503846|124680769|177eb5c7-ac02-410b-92eb-2d7b6cb26ba9|6e11c86d-a0b9-4c3b-a351-75f0d0732899",
-          ""
-        ],
-        [
-          "silk_overlap|120503846|52680769|a2781351-7031-4d26-b113-a15c5fd451e9|8a5d054c-c9e4-43ec-b697-b26362cb4868",
-          ""
-        ],
-        [
-          "silk_overlap|120696154|123719231|f17a7dac-3f1b-42f7-96ee-5e189956d850|6e11c86d-a0b9-4c3b-a351-75f0d0732899",
-          ""
-        ],
-        [
-          "silk_overlap|120696154|51719231|0ea6c4da-aa93-4b6f-a396-34fd74c26f4f|8a5d054c-c9e4-43ec-b697-b26362cb4868",
-          ""
-        ],
-        [
-          "silk_overlap|121100000|122700000|58d33c62-f55b-48bd-bf19-85f2263cb65c|1a01718b-705a-47ea-a618-bbbc9c99692c",
-          ""
-        ],
-        [
-          "silk_overlap|121200000|52200000|9bb58f2c-eb50-4a48-955b-c68b8b5797ac|8a5d054c-c9e4-43ec-b697-b26362cb4868",
-          ""
-        ],
-        [
-          "silk_overlap|128768000|70052000|91c2ae52-f74a-46f0-8b7a-85ab792feabc|8662c042-e341-4606-8e9c-1cb8f0473dec",
-          ""
-        ],
-        [
-          "silk_overlap|128768000|75792000|29cb4ab3-bc8b-4b23-965b-160bf110b796|2803a1c9-25e8-418e-8cd3-aecbfd320d27",
-          ""
-        ],
-        [
-          "silk_overlap|148000000|124200000|c45ee515-a99a-46c0-a7c3-608374f6b35c|615d6794-b9a0-4bd7-98fa-fd2ed7bfa159",
-          ""
-        ],
-        [
-          "silk_overlap|148100000|53700000|45e80a25-1312-410f-bc66-0cfa9aeadf2a|60681c34-2bf3-489e-9e76-9a6a0210be65",
-          ""
-        ],
-        [
-          "silk_overlap|148503846|124680769|16d62f8e-9a30-4ec6-9f46-cc71d72722b0|615d6794-b9a0-4bd7-98fa-fd2ed7bfa159",
-          ""
-        ],
-        [
-          "silk_overlap|148503846|52680769|0b850a5b-e158-4dd6-bb2f-7a335256c487|3bf5fcc1-6cff-48ac-9eff-0488b40c8399",
-          ""
-        ],
-        [
-          "silk_overlap|148696154|123719231|2c6c1896-28de-4d58-b48c-b2210816138f|615d6794-b9a0-4bd7-98fa-fd2ed7bfa159",
-          ""
-        ],
-        [
-          "silk_overlap|148696154|51719231|e6694041-5384-4067-864b-7fef499bdfea|3bf5fcc1-6cff-48ac-9eff-0488b40c8399",
-          ""
-        ],
-        [
-          "silk_overlap|149100000|122700000|20a3c19a-a501-4be6-b6b1-c0583a581f24|96d8c570-2269-4c5a-a1a1-4aba0d83a005",
-          ""
-        ],
-        [
-          "silk_overlap|149200000|52200000|bf4b8ccc-0d3c-4ff3-8139-fe1f5ff605d2|3bf5fcc1-6cff-48ac-9eff-0488b40c8399",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -559,7 +486,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Alice_OPA_ECM_Microphone.kicad_pro",
+    "filename": "OPA_Alice_ECM_Microphone.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -598,7 +525,7 @@
       "plot": "Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Alice_OPA_ECM_Microphone.step",
+      "step": "OPA_Alice_ECM_Microphone.step",
       "svg": "",
       "vrml": ""
     },
